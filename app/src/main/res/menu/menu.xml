@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/item1"
+        android:title="Atender Cliente"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/item2"
+        android:title="Pedidos de venda"
+        android:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/item3"
+        android:title="Efetuar Backup"
+        android:showAsAction="never" />
+    <item
+        android:id="@+id/item4"
+        android:title="Ponto"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/item5"
+        android:title="Atualizar Sistema"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/item6"
+        android:title="Sair"
+        android:showAsAction="never" />
+
+</menu>

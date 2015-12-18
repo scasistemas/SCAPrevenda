@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="tabela_prevenda">
+        CREATE TABLE IF NOT EXISTS prevenda (
+           _id TEXT,
+           numped int,
+           numero VARCHAR ,
+           loteenvio varchar,
+           nomeCliente varchar,
+           data VARCHAR NOT NULL,
+           hora VARCHAR NOT NULL,
+           condicao VARCHAR NOT NULL,
+           forma int not null,
+           status INT NOT NULL,
+           imp int NOT NULL,
+           obs VARCHAR,
+           nparc int NOT NULL,
+           parc double(12,2),
+           desc double (12,2),
+           valorbruto double(12,2) NOT NULL,
+           idsmart int NOT NULL,
+           valortotal double(12,2) NOT NULL,
+           prstatus int);
+	</string>
+
+      <string name="atualiza_bd_vs3_1">
+        ALTER TABLE prevenda ADD COLUMN prstatus  int;
+    </string>
+
+     <string name="atualiza_bd_vs4_1">
+        ALTER TABLE produto ADD COLUMN qtdembal  double(12,2);
+    </string>
+
+    <string name="atualiza_bd_vs4_2">
+        ALTER TABLE produto ADD COLUMN desconto  double(12,2);
+    </string>
+
+      <string name="atualiza_bd_vs4_3">
+        ALTER TABLE prevendaitem ADD COLUMN desconto  double(12,2);
+    </string>
+
+      <string name="atualiza_bd_vs7_1">
+        ALTER TABLE prevenda ADD COLUMN nomeCliente VARCHAR;
+    </string>
+
+     <string name="atualiza_bd_vs8_1">
+        ALTER TABLE prevenda ADD COLUMN idsmart  int;
+    </string>
+
+    <string name="atualiza_bd_vs9_1">
+        ALTER TABLE prevendaitem ADD COLUMN tipo  varchar;
+    </string>
+
+   <string name="atualiza_bd_vs10_1">
+        ALTER TABLE prevendaitem ADD COLUMN unidade  varchar;
+    </string>
+
+    <string name="tabela_vendatual">
+        CREATE TABLE IF NOT EXISTS vendatual (
+           _id int,
+           codigovend int,
+           nomevend TEXT
+           );
+	</string>
+
+     <string name="tabela_prevendaitem">
+        CREATE TABLE IF NOT EXISTS prevendaitem (
+           _id INTEGER PRIMARY KEY AUTOINCREMENT,
+           numpre varchar ,
+           descricao varchar,
+           loteenvio varchar,
+           tipo varchar,
+           codprod varchar NOT NULL,
+           digprod varchar NOT NULL,
+           unidade varchar NOT NULL,
+           quantidade double(10,2) NOT NULL,
+           valor double(12,2) NOT NULL,
+           desconto double(12,2) NOT NULL,
+           precoTb double(12,2) NOT NULL);
+	</string>
+
+        <string name="tabela_ponto">
+        CREATE TABLE IF NOT EXISTS ponto (
+            _id INTEGER PRIMARY KEY AUTOINCREMENT,
+           vendedor int,
+           datainicial varchar,
+           horainicial varchar,
+           horasaialm varchar,
+           horavoltalm varchar,
+           enviado varchar,
+           horafim varchar);
+	</string>
+
+
+    <string name="tabela_config">
+       CREATE TABLE IF NOT EXISTS config (
+              _id INTEGER PRIMARY KEY AUTOINCREMENT,
+              vendid INTEGER ,
+              nome VARCHAR ,
+              endereco VARCHAR,
+              enderecoorc VARCHAR,
+              login VARCHAR ,
+              senha VARCHAR ,
+              emp VARCHAR ,
+              atu INTEGER,
+              versaotabela VARCHAR,
+              loginpre VARCHAR,
+              senhapre VARCHAR);
+    </string>
+    <string name="tabela_loteEnvio">
+        CREATE TABLE IF NOT EXISTS loteEnvio (
+                _id INTEGER PRIMARY KEY AUTOINCREMENT,
+              ano INTEGER NOT NULL,
+              mes INTEGER NOT NULL,
+              dia INTEGER NOT NULL,
+              hora INTEGER NOT NULL,
+              minuto INTEGER NOT NULL,
+              segundo INTEGER NOT NULL,
+              milesimos INTEGER NOT NULL,
+              am_pm INTEGER NOT NULL,
+              loteEnvio TEXT );
+    </string>
+
+    <string name="tabela_produto">
+        CREATE TABLE IF NOT EXISTS produto (
+              _id INTEGER PRIMARY KEY AUTOINCREMENT,
+              procodigo VARCHAR ,
+              prodigito VARCHAR,
+              prodescri VARCHAR,
+              probarra VARCHAR,
+              proprvenda1 double(12,2),
+              proprvenda2 double(12,2),
+              qtdembal double (12,2),
+              desconto double (12,2),
+              codun VARCHAR);
+    </string>
+
+    <string name="tabela_formaDePgto">
+        CREATE TABLE IF NOT EXISTS formaDePgto (
+              _id INTEGER PRIMARY KEY AUTOINCREMENT,
+              tcocodigo VARCHAR ,
+              tcodescri VARCHAR,
+              tconrvenc int,
+              tcocondpag int);
+    </string>
+
+     <string name="tabela_paramcondi">
+        CREATE TABLE IF NOT EXISTS paramcondi (
+              _id INTEGER PRIMARY KEY AUTOINCREMENT,
+              pcvalor double(10,2),
+              pcnumero int);
+    </string>
+
+    <string name="tabela_vendedor">
+        CREATE TABLE IF NOT EXISTS vendedor (
+              _id INTEGER PRIMARY KEY AUTOINCREMENT,
+              vencodigo int(3),
+              vennome TEXT,
+              vensenha TEXT);
+    </string>
+
+    <string name="tabela_condi">
+        CREATE TABLE IF NOT EXISTS tabcondi (
+              _id INTEGER PRIMARY KEY AUTOINCREMENT,
+              descricao VARCHAR );
+    </string>
+
+    <string name="op_menu_principa_localizar_cliente">Localizar Cliente</string>
+    <string name="op_menu_principa_localizarRota_cliente">Localizar por Rota</string>
+    <string name="op_menu_principa_GereneciarRotas_cliente">Gerenciar Visitas</string>
+    <string name="op_rotas_cancelvis">Excluir Visita</string>
+    <string name="op_rotas_verped">Ver pedido</string>
+    <string name="buscar">Buscar</string>
+    <string name="aviso">Você foi mencionado!</string>
+    <string name="titulo">mencionou você</string>
+    <string name="hello">Mercado vs. Beta</string>
+    <string name="app_name">Prevenda</string>
+    <string name="configs_label">Configurações</string>
+    <string name="configs_atalhos">s</string>
+    <string name="op_menu_principal">Concluir Venda</string>
+    <string name="op_menu_pedido">Pedidos</string>
+    <string name="op_menu_orcamento">Orçamentos</string>
+    <string name="op_atend_cliente">1 pendência de pagamento</string>
+    <string name="op_atend_cliente_sim">Prosseguir</string>
+    <string name="op_atend_cliente_nao">Voltar</string>
+    <string name="op_menu_principa_atender_cliente">Atender Cliente</string>
+    <string name="op_menu_principa_pre_cadastro">Efetuar Pré Cadastro</string>
+    <string name="op_menu_principa_consultar_cliente">Dados do Cliente</string>
+    <string name="op_menu_principa_consultar_pedidos_cliente">Pedidos do Cliente</string>
+    <string name="op_menu_principa_pedidos_n_enviados">Pedidos não Enviados</string>
+    <string name="op_menu_principa_lotes_pedido">Pedidos Enviados</string>
+    <string name="op_menu_principa_orcamento_n_enviados">Orçamentos</string>
+    <string name="op_menu_principa_orcamentos">Orçamentos Enviados.</string>
+    <string name="op_menu_principa_sinc_enviar_pendentes">Enviar Pedidos Não Enviados</string>
+    <string name="op_menu_principa_sinc_total">Sincronizando Dados de Cadastro</string>
+    <string name="op_menu_principa_sinc_receber">Atualizar Tab.Preço</string>
+    <string name="op_menu_principa_sinc_receber_config">Receber Configuração</string>
+    <string name="op_menu_principa_sinc_inf">Informações do Sistema</string>
+    <string name="op_menu_cliente_salvar">Salvar</string>
+    <string name="op_menu_cliente_sair">Sair</string>
+    <string name="op_menu_cliente_ok">OK</string>
+    <string name="op_alerta_sim">Sim</string>
+    <string name="op_alerta_nao">Não</string>
+    <string name="op_alerta_editar_item">Editar Item</string>
+    <string name="op_alerta_excluir_item">Excluir Item</string>
+    <string name="op_alerta_reeviar_item">Reenviar Pré Venda</string>
+    <string name="op_alerta_reimp_tit">Impressão</string>
+    <string name="op_alerta_reimp_mens">Deseja reimprimir?</string>
+    <string name="op_alerta_visualizar_item">Visualizar Pré Venda</string>
+    <string name="op_menu_pedido_salvar">Salvar</string>
+    <string name="op_menu_pedido_incluiritem">Adicionar Itens ao Pedido</string>
+    <string name="op_menu_pedido_aplicadescacres">Aplicar Desconto</string>
+    <string name="op_menu_pedido_excluir">Excluir Pedido</string>
+    <string name="op_menu_pedido_sair">Sair</string>
+    <string name="op_menu_pedido_creceber">Info. Financeira</string>
+    <string name="header">header</string>
+    <string name="dialog_area"></string>
+    <string name="dialog_code"></string>
+    <string name="dialog_area_hint"></string>
+    <string name="dialog_code_hint"></string>
+    <string name="menu_add">menu_add</string>
+    <string name="about_summary">Android Calendar View Demo V0.5.0</string>
+    <string name="about">About</string>
+    <string name="pick_summary">start with ACTION_PICK</string>
+    <string name="pick">Pick up a Date</string>
+    <string name="show_summary">start with ACTION_VIEW</string>
+    <string name="show">Show Calendar</string>
+    <string name="action_settings">Settings</string>
+    <string name="op_sim">Sim</string>
+    <string name="op_nao">Não</string>
+<string name="hint">Hint: touch the first or last day of month to move to previous or next month.</string>
+
+</resources>

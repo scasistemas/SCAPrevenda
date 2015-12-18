@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:id="@+id/xsubLayout"
+    android:keepScreenOn="true" android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="2"  android:stretchColumns="2" android:background="@drawable/bg">
+
+        <!-- Row 2 with 3 columns -->
+
+
+        <LinearLayout>
+
+
+
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txtit"
+                android:textColor="#fff"
+                android:layout_alignParentRight="true"
+                android:text="Ponto"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_gravity="left"
+
+                android:background="@drawable/blackinfo"
+                />
+
+
+        </LinearLayout>
+
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+
+            >
+            <TextView android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:id="@+id/txdata"
+                android:layout_gravity="left"
+                android:textColor="#ff392598"
+                android:layout_alignParentRight="true"
+                android:text="Data"
+                android:textStyle="italic"
+                android:textSize="20sp"
+
+                />
+        </TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/tableRow19"
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="0"
+            >
+
+            <EditText android:id="@+id/editHora" android:layout_width="wrap_content"
+                android:focusableInTouchMode="true"  android:layout_weight="0.5" android:layout_height="wrap_content"
+                android:textAlignment="center" android:layout_gravity="center" android:gravity="center"
+                android:textSize="30sp"/>
+
+
+        </TableRow>
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:gravity="center_horizontal"
+            >
+            <Button android:soundEffectsEnabled="true" android:id="@+id/xDoneBt"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="25sp"
+                android:layout_gravity="right" android:text="Voltar" android:layout_marginLeft="2dp"
+                android:textColor="#fff" android:textStyle="bold"  android:onClick="voltar"
+                android:fitsSystemWindows="true" android:background="@drawable/button_shape_yellow"/>
+            <Button android:soundEffectsEnabled="true" android:id="@+id/xCancelBt"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="25sp"
+                android:layout_gravity="right" android:text="Salvar" android:layout_marginLeft="2dp"
+                android:textColor="#fff" android:textStyle="bold" android:onClick="confirmar" android:layout_marginRight="2dp" android:layout_marginBottom="2dp"
+                android:fitsSystemWindows="true" android:background="@drawable/button_shape"/>
+        </LinearLayout>
+
+    </TableLayout>
+</RelativeLayout>

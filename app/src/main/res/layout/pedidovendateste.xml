@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/yellow2"
+        android:id="@+id/litipo"
+
+        >
+            <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+                <Spinner
+                    style="@style/SpinnerAppTheme"
+                    android:id="@+id/cbtipo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent" android:id="@+id/listatus"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+
+        >
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+
+            >
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/txinf"
+                android:text=""
+                android:textStyle="italic"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/ic_action_about"
+               android:layout_marginRight="10sp"
+                />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Vlr total: "
+                android:textColor="#fffffdfb"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+
+
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="#FFFF"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtvrBruto"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Desc: "
+                android:textColor="#FFFF"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+
+                />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="0.0"
+                android:textColor="#FFFF"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtdesc"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Div: "
+                android:textColor="#FFFF"
+                android:textSize="14sp" android:layout_marginLeft="5dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#FFFF"
+                android:textStyle="italic"
+                android:gravity="center_horizontal"
+                android:id="@+id/txtdivid"
+                android:textSize="10sp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_width="fill_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp"
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0sp"
+            android:paddingTop="0sp"
+            android:background="#FFF"
+            android:orientation="vertical"
+            >
+            <TableLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:shrinkColumns="1"  android:stretchColumns="1" >
+
+
+
+            <!-- Row 2 with 3 columns -->
+
+            <LinearLayout
+                android:id="@+id/tableRow1"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+
+                >
+            <TextView android:layout_width="100dp" android:layout_height="20dp"
+                android:text="Forma de Pgto"
+                android:textColor="#2f6699"
+                android:textStyle="italic"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                />
+
+            <TextView android:layout_width="100dp" android:layout_height="20dp"
+                android:text="Condição"
+                android:textColor="#2f6699"
+                android:textStyle="italic"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+
+                />
+
+
+
+            <TextView android:layout_width="100dp" android:layout_height="20dp"
+                android:text="Total do Pedido"
+                android:textColor="#2f6699"
+                android:textStyle="italic"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/tableRow19"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                >
+
+            <Spinner
+                style="@style/SpinnerAppTheme"
+                android:id="@+id/forma"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+            <Spinner
+                style="@style/SpinnerAppTheme"
+                    android:id="@+id/condicao"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+            />
+
+
+
+            <TextView  android:id="@+id/vrTotalPedido" android:layout_width="100dp" android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textColor="#ff404656"
+                android:layout_alignParentRight="true"
+                android:textSize="30sp"
+                android:layout_weight="1"
+
+                />
+       </LinearLayout>
+
+    </TableLayout>
+    </LinearLayout>
+    </LinearLayout>
+

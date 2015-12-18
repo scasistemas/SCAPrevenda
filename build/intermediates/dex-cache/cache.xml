@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\javadbf.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f103703cac98cba387f62e13adf44591fe7f8210">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\javadbf-58617d14e0951e3a4e84d4bc8f6657b3a3bb60bb.jar" />
+    </item>
+    <item
+        jar="C:\Users\LuisGustavo\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\support-annotations-23.1.1-6a8e9b2328556a8204f367728a01744348b30543.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\smart_json_databsase-BETA_1_4_0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="072636227426f36fcbe93cacfceff3bd808ab54c">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\smart_json_databsase-BETA_1_4_0-3f3235625bed090d211831c7cb234e1e984e5795.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\classes-01cbbc6afe8f38383a8152021795212191afe883.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\jsr305-1.3.9.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\jsr305-1.3.9-4bd6a24112ffb389dee48bb7b1a5a07dec190ef8.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\jackson-core-2.1.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="f6c3aed1cdfa21b5c1737c915186ea93a95a58bd">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\jackson-core-2.1.3-f09fa8dbc34d2611646f8ed3f8beb00aa1aedd36.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\google-oauth-client-1.16.0-rc.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="387f2dd16c5ce756878cb6370d32c8967724f274">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\google-oauth-client-1.16.0-rc-d7db4a8161b62e6a916f9480dcba5eee5e14c19b.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\smtp.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="5933ab2c9c282b7788fc93ad38538db372bda95e">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\smtp-8ae697a8b699ce259d5610693207607903ae9dbf.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\classes-7cd0c53fcbcb034e9b183e2c75032ff54e473745.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\google-api-services-drive-v2-rev123-1.16.0-rc.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="87b925503595beba3118f621a25abefdd72264ca">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\google-api-services-drive-v2-rev123-1.16.0-rc-36c805763745d558139c4ac66acd7635c771cfce.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\google-http-client-1.16.0-rc.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="73a53339b8cff19a8e3d0c1cdb6af25c93f3bf45">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\google-http-client-1.16.0-rc-ad4c445b6c3994461bc8e1c6d82bdd6317a06f25.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\google-http-client-android-1.16.0-rc.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8164d4bd27c0ffe2a0f75c8fb0ffc1643a383de7">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\google-http-client-android-1.16.0-rc-a379167a3299e053ddaf22699637900e85a11caa.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\additionnal.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="bd9e8dc422bb8c8405359947fe9f4282b49f57f4">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\additionnal-106f0afee381c989fe29ac85690deb7f5f5ae164.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\jcifs-1.3.17.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="60e3805e7bcfe96bf1f1907b821d251cc9d789ec">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\jcifs-1.3.17-174c87a58b320384943b68a0ea918a89426d87e0.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\gson-2.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2e66da15851f9f5b5079228f856c2f090ba98c38">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\gson-2.1-45b31f3e5eaa07ca0105a00d0ab857c8ed55a6a7.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\google-http-client-gson-1.16.0-rc.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3f0cd57fb6fae819915267e1216010c5a7e2fc8e">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\google-http-client-gson-1.16.0-rc-135c2e39f3123a20c4ca43a1d28f7b706153da53.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\google-api-client-1.16.0-rc.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2ee4856b610341a1860003b9a10f192248f3a82a">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\google-api-client-1.16.0-rc-f190f76c559187804faf76626572ba2cc56654f6.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\internal_impl-23.1.1-9749404474c3c74849bb71fa812a3b600d357ad0.jar" />
+    </item>
+    <item
+        jar="C:\projetos android\SCAPrevenda\app\libs\google-http-client-jackson-1.16.0-rc.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="25f202a584c10b2a06e1883ffe8abd364e7e6501">
+        <dex dex="C:\projetos android\SCAPrevenda\app\build\intermediates\pre-dexed\release\google-http-client-jackson-1.16.0-rc-efff78913958931decae40d876fd25d944e9ad5d.jar" />
+    </item>
+
+</items>

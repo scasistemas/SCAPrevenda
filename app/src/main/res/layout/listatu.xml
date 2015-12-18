@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="right"
+        android:background="#ff5b88b3"
+        android:layout_gravity="right"
+
+
+        >
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#ff5b88b3"
+            android:layout_gravity="center">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:id="@+id/txinf"
+                android:text="Atualizacoes "
+                android:textStyle="italic"
+                android:textColor="#ffff"
+                android:textSize="16dp"
+                android:layout_marginRight="10sp"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:text="Atualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape_green"
+            android:textColor="#fff"
+            android:onClick="atualizar"
+            android:layout_gravity="right"
+            android:drawableStart="@drawable/ic_sincronizar"/>
+
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="300sp"/>
+
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true" android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0sp"
+        android:paddingTop="0sp"
+        android:background="#FFF"
+        >
+
+        <Button
+            android:text=" Sair "
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape_yellow"
+            android:textColor="#fff"
+            android:onClick="sair" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

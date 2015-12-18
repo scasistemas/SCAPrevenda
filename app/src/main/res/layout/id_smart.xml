@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:background="@drawable/bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_root1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/blackinfo"
+
+        >
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Configurações : "
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="#fff"
+            android:drawableStart="@drawable/ic_action_settings"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senha : "
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ff0d0d0d"
+            />
+
+        <EditText android:id="@+id/edtxsenha" android:layout_width="120dp"
+            android:focusableInTouchMode="true" android:layout_height="wrap_content"
+            android:textSize="18dp"/>
+
+
+        <Button android:id="@+id/altidsmartc"
+            android:layout_width="wrap_content" android:layout_height="33dp"
+            android:text="Habilitar"
+            android:background="@drawable/button_shape_yellow"
+            android:textColor="#fff"
+            android:textSize="12dp"
+            android:layout_marginRight="8dp"
+            android:onClick="habilitar"
+            android:layout_marginLeft="4dp"
+            android:layout_alignRight="@+id/edtxsmart"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id do Smartphone : "
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ff0d0d0d"
+           />
+
+        <EditText android:id="@+id/edtxsmart" android:layout_width="70dp"
+            android:focusableInTouchMode="true" android:layout_height="50dp"
+            android:textSize="18dp" android:inputType="number" android:enabled="false"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

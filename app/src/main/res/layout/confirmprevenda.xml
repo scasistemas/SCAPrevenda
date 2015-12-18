@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:id="@+id/xsubLayout"
+    android:keepScreenOn="true" android:orientation="vertical" android:background="@drawable/bg"
+    android:layout_height="fill_parent" android:padding="8dp">
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="1"  android:stretchColumns="1"
+    android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+    android:id="@+id/tableLayout">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2f6699"
+       >
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#ffff"
+            android:text="Valor Total" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="Dividido" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="#fff"
+            android:text="Parcelas" />
+
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2f6699">
+
+        <TextView
+            android:id="@+id/txvrtot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:textSize="12sp"
+            android:textColor="#2f6699"
+            android:background="#fff"
+            android:layout_margin="1px"
+            android:text="Announced" />
+
+        <TextView
+            android:id="@+id/txdivid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_margin="1px"
+            android:background="#fff"
+            android:textColor="#2f6699"
+            android:text="Announced" />
+        <TextView
+            android:id="@+id/txparc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_margin="1px"
+            android:background="#fff"
+            android:textColor="#2f6699"
+            android:text="Announced" />
+
+
+    </TableRow>
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp" android:gravity="center_horizontal" >
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center_horizontal"  >
+
+        <TextView
+            android:id="@+id/txtperc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="perc"/>
+
+
+        <EditText android:id="@+id/desconto"
+            android:layout_width="100sp" android:layout_height="wrap_content"
+            android:inputType="numberDecimal" android:hint="Desc."
+            />
+        <Spinner
+            style="@style/SpinnerAppTheme"
+            android:id="@+id/percval"
+            android:layout_width="60sp"
+            android:layout_height="wrap_content"
+
+            />
+        <Button android:soundEffectsEnabled="true" android:id="@+id/btcalc"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right" android:text="Calcular" android:layout_marginLeft="2dp"
+            android:textColor="#fff" android:layout_height="35dp"  android:textSize="12dp"
+            android:textStyle="bold" android:onClick="calcular"
+            android:fitsSystemWindows="true" android:background="@drawable/button_shape"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:gravity="center_horizontal"
+        android:layout_marginTop="10dp" >
+
+        <RadioGroup android:layout_width="fill_parent" android:orientation="horizontal"
+           android:layout_height="wrap_content"  android:gravity="center_horizontal"
+            android:layout_weight="1" android:id="@+id/rgOpinion">
+            <RadioButton android:layout_width="wrap_content" android:textColor="#0b0404"
+                android:id="@+id/rborc" android:layout_height="wrap_content"
+                android:checked="true" android:text="Orçamento"></RadioButton>
+            <RadioButton android:id="@+id/rbpre" android:textColor="#0b0404"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Pré Venda"></RadioButton>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  android:gravity="center_horizontal"
+        android:layout_marginTop="2dp"  android:id="@+id/listatus" >
+
+
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/checimp"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/txtimp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imprimir"
+            android:layout_gravity="center"/>
+
+        <Spinner
+            style="@style/SpinnerAppTheme"
+            android:id="@+id/cbimp"
+            android:layout_width="100sp"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:visibility="gone"
+
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/ckstatus"
+            android:textSize="12sp"
+            android:checked="true"
+            />
+        <TextView
+            android:id="@+id/txtprevenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prevenda Fechada"
+            android:layout_gravity="center"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="2dp">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" Nome do Cliente:"
+            android:background="#2f6699"
+            android:textColor="#ffff"/>
+
+        <EditText android:id="@+id/edtxCli"
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Nome Cliente"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="2dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=" Obs:"
+            android:background="#2f6699"
+            android:textColor="#ffff"/>
+
+        <EditText android:id="@+id/obs"
+            android:layout_width="fill_parent" android:layout_height="80sp" android:hint="Observação"
+            />
+     </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:gravity="center_horizontal"
+       >
+        <Button android:soundEffectsEnabled="true" android:id="@+id/xDoneBt"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="25sp"
+            android:layout_gravity="right" android:text="Voltar"
+            android:textColor="#fff" android:textStyle="bold"  android:onClick="voltar"
+            android:fitsSystemWindows="true" android:background="@drawable/button_shape_yellow"/>
+        <Button android:soundEffectsEnabled="true" android:id="@+id/xCancelBt"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"   android:textSize="25sp"
+            android:layout_gravity="right" android:text="Salvar" android:layout_marginLeft="2dp"
+            android:textColor="#fff" android:textStyle="bold" android:onClick="confirmar"
+            android:fitsSystemWindows="true" android:background="@drawable/button_shape"/>
+        </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="fill_parent" android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" android:gravity="center_horizontal"
+        >
+        </LinearLayout>
+
+</TableLayout>
+
+</RelativeLayout>

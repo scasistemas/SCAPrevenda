@@ -1,0 +1,165 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+           >
+            <ImageButton
+
+                android:id="@+id/btSincMenuPricipal"
+                android:src="@drawable/ic_action_secure"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acesso"
+                android:gravity="center"
+                android:textColor="#2f6699"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+
+        >
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#ffc3e2eb"/>
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="Pré Venda"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#2f6699"
+            android:textSize="25sp"
+            android:typeface="serif"
+          />
+        <TextView
+            android:id="@+id/txtvendedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acesso"
+            android:layout_gravity="left"
+            android:textColor="#2f6699"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="12dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <EditText
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Vendedor"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+
+            android:textSize="20dp"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_action_person"
+            >
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Senha"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="20dp"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_action_accounts"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+
+            android:textStyle="normal"
+            android:text="Entrar"
+            android:textSize="30sp"
+            android:onClick="acessar"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"
+            android:textColor="#fff6f6fa"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:gravity="right"
+
+            >
+
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sair"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#2f6699"
+                android:layout_gravity="bottom"
+                android:typeface="serif"
+                android:layout_marginBottom="2dp"
+                android:onClick="fecharprevenda"
+                android:clickable="true"
+                android:textSize="30sp"/>
+            <ImageButton
+                android:id="@+id/btSincMenuPricipal9"
+                android:src="@drawable/ic_action_next_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@android:color/transparent"
+                android:onClick="fecharprevenda"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
