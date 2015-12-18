@@ -192,6 +192,7 @@ public class MenuInicial extends Activity implements OnClickListener , AsyncResp
         super.onCreateOptionsMenu(menu);
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu, menu);
+        String a =";";
         return true;
     }
 
@@ -230,6 +231,7 @@ public class MenuInicial extends Activity implements OnClickListener , AsyncResp
                     });
                     localBuilder.create().show();
                     return;
+
                 }
                 MenuInicial.this.selecionarsincMenuPricipal(paramAnonymousInt, 0);
             }
@@ -267,7 +269,7 @@ public class MenuInicial extends Activity implements OnClickListener , AsyncResp
             this.startActivityForResult(localIntent,101);
 
         }
-        return;
+
     }
 
 
